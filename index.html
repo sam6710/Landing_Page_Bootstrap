@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Gato con Botas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/4328465e5b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Tráiler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#información">Película</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="hero" class="container-fluis bg-secondary">
+      <h1 class="titulo">El Gato con Botas: El último deseo</h1>
+      <div id="trailer">
+        <span><iframe width="560" height="315" src="https://www.youtube.com/embed/QaiUm8jNiCk/?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
+      </div>
+    </div>
+    <div class="container-fluid" id="películas">
+      <div class="row">
+        <h2 class="titulo">Películas</h2>
+        <div class="card col-xl-3 offset-xl-2 col-sm-6 offset-sm-3">
+          <img class="" src="./imagenes/peli 1.webp" id="peli-img" alt="Primera película del gato con Botas">
+          <div class="card-body">
+            <h3 class="titulo">El Gato con Botas</h3>
+            <button type="button" class="btn btn-secondary mb-4 mas_info" data-bs-toggle="modal" data-bs-target="#Modal1">Ver Información</button>
+          </div>
+        </div>
+        <div class="card col-xl-3 offset-xl-1 col-sm-6 offset-sm-3">
+          <img src="./imagenes/peli 2.jpg" id="peli-img" alt="Segunda película del gato con botas">
+          <div class="card-body">
+            <h3 class="titulo">El Gato con Botas: El último deseo.</h3>
+            <button type="button" class="btn btn-secondary mb-4 mas_info" data-bs-toggle="modal" data-bs-target="#Modal2">Ver Información</button>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="Modal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">El Gato con Botas</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <h2>Sinopsis</h2>
+              <p class="sinopsis">Gato es un fugitivo de la justicia que se dedica a cometer robos para subsistir, sin robar a personas de bajos recursos o a iglesias.
+                El lugar en el que fue criado Gato es en el pueblo de San Ricardo, donde fue abandonado de pequeño en un orfanato. Allí conoce a la mujer a quien él llamaría Madre y a su único amigo y hermano, un huevo llamado Humpty Alexander Dumpty.
+                Junto a Humpty planean encontrar los frijoles mágicos que, según Humpty, despiertan una inmensa planta que conduce a una tierra mágica en el cielo.
+                Las circunstancias lastiman los sentimientos de Humpty, quien pasó tiempo en la cárcel debido a sus robos y porque accidentalmente él fue el que liberó al toro que casi mata a la madre del comandante. Sin embargo, no renunciaba a su sueño de encontrar esa tierra mágica e irse con Gato.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal2 -->
+      <div class="modal fade" id="Modal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">El Gato con Botas: El último desea</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <h2>Sinopsis</h2>
+              <p class="sinopsis">
+                Algún tiempo después de los eventos de Shrek Forever After, el Gato con Botas organiza una fiesta en la mansión del gobernador de Del Mar cuando es sorprendido por éste y se desata una pelea con sus hombres, 
+                que provoca que un gigante de tierra se despierte y ataque al pueblo. Gato se las arregla para someter al gigante, pero poco después es aplastado por una campana.
+                Al despertar, un médico le informa que solo tiene una vida después de haber muerto ocho veces y le sugiere que se retire de inmediato. Gato inicialmente lo ignora, 
+                pero después de perder un duelo y su espada ante un lobo de capucha negra en una taberna local esa noche, busca refugio en la casa de Mama Luna, una señora que cuida gatos, para ser una mascota domesticada y entierra ceremoniosamente su capa y sus botas buscando retirarse de su carrera como bandido.
+              </p>
+            </div>
+                  <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div id="información" class="container-fluid">
+      <div id="película">
+        <h2 class="titulo">El último deseo</h2>
+      </div>
+      <div id="reparto">
+        <h3 class="titulo">Personajes</h3>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-sm-5">
+              <div class="row">
+                <div class="col gy-2"><img src="./imagenes/gatoConBotas 1.jpg" class="horizontal" alt="Gato con Botas"></div>
+              </div>
+              <div class="row">
+                <div class="col gy-2"><img src="./imagenes/gatoConBotas 2.jpeg" class="cuadrada" alt="Gato con Botas"></div>
+                <div class="col gy-2"><img src="./imagenes/gatoConBotas 3.jfif" class="cuadrada" alt="Gato con Botas"></div>
+              </div>
+            </div>
+            <div class="col-lg-9 col-sm-7">
+              <h4 class="titulo">Gato con Botas</h4>
+              <p>Interpretado por: Antonio Banderas.</p>
+              <p>El Gato con Botas es un personaje principal de la franquicia de Shrek. Hizo su primera aparición en la película Shrek 2 y pronto se convirtió en el compañero y ayudante de Shrek.
+              En esta película el gato con botas es el protagonista de la aventura, la increíble secuela de la primera entrega "El gato con Botas".</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-lg-9 col-sm-12">
+              <h4 class="titulo">Kitty Zarpas Suaves</h4>
+              <p>Interpretado por: Salma Hayek en la versión inglesa, Verónica López Treviño en la versión latina y Diana Alonso en la española.</p>
+              <p>Primera aparición en el final de Shrek 2 cuando el Gato con Botas canta Livin' La Vida Loca.
+                Originalmente, Kitty fue contratada por Humpty Dumpty para traer al Gato con Botas ante él.
+                Kitty es vista con un antifaz negro y la primera vez que aparece y tiene una pelea de baile con el Gato.</p>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-0 col-sm-12"><img src="./imagenes/kitty 1.jfif" class="vertical" alt="Kitty Zarpas Suaves"></div>
+                <div class="col-lg-6 offset-lg-0 col-sm-12">
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-12"><img src="./imagenes/kitty 2.jfif" class="cuadradaKitty" alt="Kitty Zarpas Suaves"></div>
+                    <div class="col-lg-6 col-sm-12"><img src="./imagenes/kitty 3.jfif" class="cuadradaKitty" alt="Kitty Zarpas Suaves"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-lg-3 col-sm-12">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-0 col-sm-4 offset-sm-2 gy-2"><img src="./imagenes/perro 1.jfif" class="cuadrada" alt="Perro"></div>
+                <div class="col-lg-6 col-sm-4 gy-2"><img src="./imagenes/perro 2.jfif" class="cuadrada" alt="Perro"></div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 offset-lg-0 col-sm-4 offset-sm-2"><img src="./imagenes/perro 3.jfif" class="perroCuadrada" alt="Perro"></div>
+                <div class="col-lg-6 col-sm-4"><img src="./imagenes/perro 4.jfif" class="perroCuadrada2" alt="Perro"></div>
+              </div>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+              <h4 class="titulo">Perro</h4>
+              <p>Interpretado por: Harvey Guillén tanto en la versión inglesa como en la latina y por Raúl Lara en la española.</p>
+              <p>Perrito, o Perro, es el tritagonista de la película El Gato con Botas: El Último Deseo.
+              Es un perro de terapia para el Gato con Botas. Comenzó como uno de los gatos domésticos de Mama Luna, porque se disfrazaba de gato. Conoció a Gato y se hicieron amigos rápidamente, al menos a los ojos de Perrito.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-lg-9 col-sm-12">
+              <h4 class="titulo">Big Bad Wolf</h4>
+              <p>Interpretado por Wagner Moura en inglés, Pisano en latino y Roberto Encinas en España.</p>
+              <p>Es el principal antagonista del largometraje animado de DreamWorks, El gato con botas: El último deseo, un derivado de la franquicia de Shrek.
+              Toma la forma de un lobo blanco con una capa negra con capucha.</p>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-0 col-sm-4 offset-sm-2 gy-2"><img src="./imagenes/lobo 1.png" class="cuadrada" alt="Big Bad Wolf"></div>
+                <div class="col-lg-6 col-sm-4 gy-2"><img src="./imagenes/lobo 2.jfif" class="cuadrada" alt="Big Bad Wolf"></div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 offset-lg-0 col-sm-8 offset-sm-2 gy-2"><img src="./imagenes/lobo 3.jpg" class="horizontal" id="lobo3" alt="Big Bad Wolf"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div id="contacto" class="container-fluis">
+      <form id="form">
+        <h3 class="text-secondary  offset-6">Contactenos</h3>
+        <div class="form-outline mb-4 offset-6">
+          <label class="form-label" for="form4Example1">Nombre</label>
+          <input type="text" id="form4Example1" class="form-control" />
+        </div>
+        <div class="form-outline mb-4  offset-6">
+          <label class="form-label" for="form4Example1">Apellidos</label>
+          <input type="text" id="form4Example1" class="form-control" />
+        </div>
+        <div class="form-outline mb-4  offset-6">
+          <label class="form-label" for="form4Example2">Correo Electrónico</label>
+          <input type="email" id="form4Example2" class="form-control" />
+        </div>
+        <div class="form-outline mb-4  offset-6">
+          <label class="form-label" for="form4Example3">Mensaje</label>
+          <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary btn-block mb-4  offset-6">Send</button>
+      </form>
+    </div>
+  </main>
+  
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/home" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.es" role="button" target="_blank"><i class="fab fa-google"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com" role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/sam6710" role="button" target="_blank"><i class="fab fa-github"></i></a>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://github.com/sam6710">Samuel Gómez Pérez</a>
+    </div>
+  </footer>
+</body>
+</html>

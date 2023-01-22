@@ -1,0 +1,118 @@
+/* Fonts */
+@font-face {
+    font-family: verona-demibold-regular;
+    src: url(./fonts/Verona-DemiBold.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Letra de los títulos */
+.titulo{
+    font-family: verona-demibold-regular;
+}
+
+/* Menú */
+h1{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+/* Hero */
+#hero{
+    padding-bottom: 3%;
+    margin-top: 2rem;
+}
+#hero h2{
+    padding-top: 1%;
+    padding-left: 4%;
+}
+iframe{ 
+    width: 50%;
+}
+span{
+    margin-left: 25%;
+}
+
+/* Sección de información */
+#card{
+    border-radius: 0.4rem;
+}
+#card .titulo{
+    text-align: center;
+}
+#peli-img{
+    width: 100%;
+    margin-top: 0.6rem;
+    border-radius: 0.4rem;
+}
+#información{
+    padding-top: 3%;
+}
+#información .titulo{
+    text-align: center;
+}
+.horizontal{
+    width: 100%;
+    height: 96%;
+}
+.cuadrada{
+    width: 100%;
+    height: 90%;
+}
+.vertical{
+    height: 86%;
+}
+.cuadradaKitty{
+    height: 70%;
+}
+.perroCuadrada{
+    width: 100%;
+    margin-bottom: 0.4rem;
+}
+.perroCuadrada2{
+    width: 100%;
+    height: 94%;
+}
+hr{
+    width: 60%;
+    margin-left: 20%;
+}
+h4{
+    margin-top: 2rem;
+}
+p{
+    font-family: 'Roboto Slab', serif;
+    font-size: calc(1vw + 0.2rem);
+}
+/* .mas_info{
+    margin-left: 34%;
+} */
+.sinopsis{
+    font-size: calc(0.6vw + 0.4rem);
+}
+
+/* Sección contacto/formulario */
+#contacto{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+#form{
+    width: 66%;
+}
+#form button{
+    width: 50%;
+}
+
+/* @media screen and (max-width:1664px){
+    .vertical{
+        margin-left: 33%;
+    }
+    .cuadradaKitty{
+        width: 90%;
+    }
+} */
